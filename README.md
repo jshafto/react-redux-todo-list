@@ -7,6 +7,6 @@ Browser-based to-do list application that manages state using local storage and 
 ## Project Checklist
 - [x] Generate Redux store
 - [x] Define action creators and reducers
-- [ ] Test dispatching actions
+- [x] Test dispatching actions
 - [ ] Dispatch actions from components
 - [ ] Reseting task list

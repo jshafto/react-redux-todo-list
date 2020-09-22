@@ -1,11 +1,11 @@
 // TODO: Define `CREATE_TASK` constant
-const CREATE_TASK = 'CREATE_TASK';
+export const CREATE_TASK = 'CREATE_TASK';
 // TODO: Define `DELETE_TASK` constant
-const DELETE_TASK = 'DELETE_TASK';
+export const DELETE_TASK = 'DELETE_TASK';
 // TODO: Define `createTask` action creator function
-const createTask = (taskMessage) => {
+export const createTask = (taskMessage) => {
     const taskId = new Date().getTime();
-
+    debugger;
     return {
         type: CREATE_TASK,
         taskId,
@@ -14,7 +14,7 @@ const createTask = (taskMessage) => {
 
 }
 // TODO: Define `deleteTask` action creator function
-const deleteTask = (taskId) => ({
+export const deleteTask = (taskId) => ({
     type: DELETE_TASK,
     taskId
 })

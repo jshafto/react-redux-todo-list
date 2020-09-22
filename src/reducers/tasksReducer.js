@@ -8,6 +8,7 @@ const tasksReducer = (state = {}, action) => {
   const nextState = {...state};
   switch (action.type) {
     case CREATE_TASK:
+      //debugger
       const newTask = {id: action.taskId, message: action.taskMessage};
       nextState[newTask.id] = newTask;
       return nextState;
