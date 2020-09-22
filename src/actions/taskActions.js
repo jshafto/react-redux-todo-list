@@ -5,7 +5,7 @@ export const DELETE_TASK = 'DELETE_TASK';
 // TODO: Define `createTask` action creator function
 export const createTask = (taskMessage) => {
     const taskId = new Date().getTime();
-    debugger;
+    //debugger;
     return {
         type: CREATE_TASK,
         taskId,

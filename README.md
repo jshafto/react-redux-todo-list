@@ -8,5 +8,5 @@ Browser-based to-do list application that manages state using local storage and 
 - [x] Generate Redux store
 - [x] Define action creators and reducers
 - [x] Test dispatching actions
-- [ ] Dispatch actions from components
+- [x] Dispatch actions from components
 - [ ] Reseting task list
