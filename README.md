@@ -5,8 +5,8 @@ Completed as part of the App Academy curriculum. Implementation by Ben Pu and Ju
 Browser-based to-do list application that manages state using local storage and redux.
 
 ## Project Checklist
-- [ ] Generate Redux store
-- [ ] Define action creators and reducers
+- [x] Generate Redux store
+- [x] Define action creators and reducers
 - [ ] Test dispatching actions
 - [ ] Dispatch actions from components
 - [ ] Reseting task list
