@@ -9,4 +9,4 @@ Browser-based to-do list application that manages state using local storage and 
 - [x] Define action creators and reducers
 - [x] Test dispatching actions
 - [x] Dispatch actions from components
-- [ ] Reseting task list
+- [x] Reseting task list

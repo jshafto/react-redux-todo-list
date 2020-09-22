@@ -1,7 +1,7 @@
 import React from 'react';
 import Task from './Task';
 import store from '../store';
-import { deleteTask } from '../actions/taskActions';
+import { deleteTask, resetTaskList } from '../actions/taskActions';
 
 class TodoList extends React.Component {
   componentDidMount() {
@@ -26,6 +26,10 @@ class TodoList extends React.Component {
     //       and dispatch a 'DELETE_TASK' action
   }
 
+  resetTaskList = () => {
+    store.dispatch(resetTaskList())
+  }
+
   render() {
     // TODO: Get the tasks stored in state with the `getState` method
     const tasksState = store.getState();
@@ -35,12 +39,16 @@ class TodoList extends React.Component {
     if (!tasksState) return null
 
     return (
-      <ul>
-        {Object.values(tasksState).map(task => (
-          <Task key={task.id} deleteTask={this.deleteTask} task={task} />
-        ))}
+      <>
+        <ul>
+          {Object.values(tasksState).map(task => (
+            <Task key={task.id} deleteTask={this.deleteTask} task={task} />
+          ))}
 
-      </ul>
+        </ul>
+        <button onClick={this.resetTaskList}>Reset</button>
+      </>
+
     );
   }
 }

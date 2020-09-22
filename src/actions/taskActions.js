@@ -3,6 +3,8 @@ export const CREATE_TASK = 'CREATE_TASK';
 // TODO: Define `DELETE_TASK` constant
 export const DELETE_TASK = 'DELETE_TASK';
 // TODO: Define `createTask` action creator function
+export const RESET_TASK_LIST = 'RESET_TASK_LIST'
+
 export const createTask = (taskMessage) => {
     const taskId = new Date().getTime();
     //debugger;
@@ -17,4 +19,8 @@ export const createTask = (taskMessage) => {
 export const deleteTask = (taskId) => ({
     type: DELETE_TASK,
     taskId
+})
+
+export const resetTaskList = () => ({
+    type: RESET_TASK_LIST
 })
